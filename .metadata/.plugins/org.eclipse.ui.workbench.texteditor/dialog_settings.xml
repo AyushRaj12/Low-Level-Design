@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="java.lang.Class">
+		<item key="selection" value="logObject.log(Logprocessor.ERROR, &quot;this is error log&quot;);"/>
+		<list key="findhistory">
+			<item value="logObject.log(Logprocessor.ERROR, &quot;this is error log&quot;);"/>
+		</list>
+	</section>
+</section>

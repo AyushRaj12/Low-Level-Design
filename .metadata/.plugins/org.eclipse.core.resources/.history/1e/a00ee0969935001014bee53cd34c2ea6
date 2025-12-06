@@ -1,0 +1,27 @@
+package BuilderDesign;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//With Director class
+        Director director1=new Director(new EngineerStudentBuilder());
+        Director director2=new Director(new MBAStudentBuilder());
+        Student engineer=director1.createStudent();
+        Student mba=director2.createStudent();
+        System.out.println(engineer.toString());
+        System.out.println(mba.toString());
+        
+        //Without using mediator Director class
+        
+        StudentBuilder studentBuilder1=new EngineerStudentBuilder();
+        Student student1=studentBuilder1.setRollNumber(123).setAge(25).setName("Raj").setSubjects().build();
+        System.out.println(student1.toString());
+        
+        StudentBuilder studentBuilde2=new MBAStudentBuilder();
+        Student student2=studentBuilde2.setRollNumber(12345).setAge(26).setName("Ayush").setMotherName("Rekha").setSubjects().build();
+        System.out.println(student2.toString());
+	}
+
+}

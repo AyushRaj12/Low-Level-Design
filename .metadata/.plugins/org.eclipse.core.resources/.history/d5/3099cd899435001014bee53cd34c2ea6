@@ -1,0 +1,19 @@
+package BuilderDesign;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MBAStudentBuilder extends StudentBuilder {
+
+	@Override
+	public StudentBuilder setSubjects() {
+		// TODO Auto-generated method stub
+		List<String> mbaSubjects=new ArrayList<>();
+		mbaSubjects.add("Micro Economics");
+		mbaSubjects.add("Business Studies");
+		mbaSubjects.add("Operations Management");
+		this.subjects=mbaSubjects;
+		return this;
+	}
+
+}
